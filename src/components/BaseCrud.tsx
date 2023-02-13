@@ -1,8 +1,9 @@
 import DynamicForm from "./BaseForm";
-import React, { useState, useEffect } from "react";
+import React, {FC} from "react";
 import Table from './Table'
+import {BaseCrudProps} from '../interfaces'
 
-const DynamicCrudBaseView = ({
+const DynamicCrudBaseView: FC<BaseCrudProps> = ({ 
   fieldDefinitions,
   data,
   columns,
@@ -11,7 +12,6 @@ const DynamicCrudBaseView = ({
   handleSubmit,
   handleCreate,
 }) => {
-
   return (
     <div>
       <button onClick={handleCreate}>Create</button>

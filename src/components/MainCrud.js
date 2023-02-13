@@ -147,7 +147,7 @@ const Users = () => {
 
 
     return (
-        <div>
+        <>
             <DynamicCrudBaseView
                 fieldDefinitions={fieldDefinitions}
                 data={dataList}
@@ -159,7 +159,7 @@ const Users = () => {
                 handleCreate={handleCreate}
                 handleUpdate={handleUpdate}
             />
-        </div>
+        </>
     );
 };
 
